@@ -24,11 +24,11 @@ body {
 }
 
 .login-box .avatar {
-    width: 140px;
-    height: 100px;
+    width: 20%;
     position: absolute;
-    top: 20px;
-    left: 33%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -20%);
 }
 
 
@@ -65,15 +65,20 @@ body {
 }
 
 .login-box input[type="submit"] {
-    border: #fdb4bf;
+    border: #b57ebc;
     outline: none;
     height: 40px;
-    background: #fdb4bf;
+    background: #b57ebc;
     color: #000;
     font-size: 22px;
     font-family: PT serifa;
     border-radius: 20px;
     font-weight: 500;
+}
+
+.login-box input[type="submit"]:hover{
+    background-color: #4d3653;
+    color: #fff;
 }
 
 .login-box a {
