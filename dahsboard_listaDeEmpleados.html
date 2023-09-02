@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+        * {
+          color:black;
+        }
+        .table {
+          border: 1px solid rgba(39,41,43,0.1); }
+        .table.img {
+          border: #e57d90;
+        }
+        .list-group-item {
+          background-color: rgba(253,180,191,0.66); 
+          font-size: 19px; 
+          font-weight: 500; 
+          margin:1px; }
+        .list-group-item:hover {
+          background-color: #e57d90;
+          color: white; }
+        .btn {
+          background-color: rgba(253,180,191,0.66); 
+          color: black;
+          border: #e57d90; }
+        .btn:hover {
+          background-color: #e57d90;
+          color: white; }
+        .centrado {
+          text-align: center;
+          vertical-align: middle; }
+    </style>
+
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo.png" alt="Bootstrap" width="70" height="50">
+            ORQUESTA LATIN BERRYS
+          </a>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <ul class="list-group list-group-flush my-5">
+              <button class="list-group-item py-4">Tablero de instrumentos
+                <a href=""></a>
+              </button>
+              <button class="list-group-item py-4">Listado de empleados
+                <a href=""></a>
+              </button>
+              <button class="list-group-item py-4">Lista de administradores
+                <a href="dash_listaDeAdministradores.html"></a>
+              </button>
+              <button href="" class="list-group-item py-4">Lista de presentaciones
+                <a href=""></a>
+              </button>
+              <button href="" class="list-group-item py-4">Puntuacion de empleados
+                <a href=""></a>
+              </button>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+            <table id="table" class="table-striped table-hover" border: 1px solid rgba(39,41,43,0.1);>
+              <h2><img src="img/iconos/person.svg" width="35px"> Listado empleados</h2>
+              <hr>
+              <button class="btn btn-light btg-lg my-3"><img src="img/iconos/add-circle-outline.svg" width="25px"> Añadir empleados</button>
+              <thead>
+               <tr>
+                 <th class="centrado py-4">N°</th>
+                 <th class="centrado ">Nombre del emplead</th>
+                 <th class="centrado">Tipo de instrumento</th>
+                 <th class="centrado">Numero</th>
+                 <th class="centrado">Correo</th>
+                 <th class="centrado">Puntuacion</th>
+                 <th class="centrado"> </th>
+                 <th class="centrado"> </th>
+               </tr>
+              </thead>
+         
+              <tbody>
+               <tr>
+                 <th class="centrado py-3">1</th>
+                 <th class="centrado">Pepa</th>
+                 <th class="centrado">Guitarra</th>
+                 <th class="centrado">3228250165</th>
+                 <th class="centrado">pepe123@gmail.com</th>
+                 <th class="centrado">4.2</th>
+                 <th class="centrado"> <button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"> <button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+               </tr>
+               <tr>
+                 <th class="centrado py-3">2</th>
+                 <th class="centrado">Mariana</th>
+                 <th class="centrado">Piano</th>
+                 <th class="centrado">3138250458</th>
+                 <th class="centrado">mark123@gmail.com</th>
+                 <th class="centrado">3.2</th>
+                 <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+               </tr>
+               <tr>
+                 <th class="centrado py-3">3</th>
+                 <th class="centrado">Julian</th>
+                 <th class="centrado">Trompeta</th>
+                 <th class="centrado">3138845690</th>
+                 <th class="centrado">juli123@gmail.com</th>
+                 <th class="centrado">1.5</th>
+                 <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+               </tr>
+               <tr>
+                 <th class="centrado py-3">4</th>
+                 <th class="centrado">Alejandra</th>
+                 <th class="centrado">Saxofon</th>
+                 <th class="centrado">3145845690</th>
+                 <th class="centrado">alejo123@gmail.com</th>
+                 <th class="centrado">5</th>
+                 <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+               </tr>
+               <tr>
+                 <th class="centrado py-3">5</th>
+                 <th class="centrado">Marcela</th>
+                 <th class="centrado">Tambor</th>
+                 <th class="centrado">3125695690</th>
+                 <th class="centrado">marcela123@gmail.com</th>
+                 <th class="centrado">3.6</th>
+                 <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+               </tr>
+               <tr>
+                <th class="centrado py-3">6</th>
+                <th class="centrado">Juana</th>
+                <th class="centrado">Flauta</th>
+                <th class="centrado">3228250165</th>
+                <th class="centrado">juana123@gmail.com</th>
+                <th class="centrado">2.2</th>
+                <th class="centrado"> <button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">7</th>
+                <th class="centrado">David</th>
+                <th class="centrado">Guitarra electrica</th>
+                <th class="centrado">3138250458</th>
+                <th class="centrado">david123@gmail.com</th>
+                <th class="centrado">3.5</th>
+                <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">8</th>
+                <th class="centrado">Jose</th>
+                <th class="centrado">Violonchelo</th>
+                <th class="centrado">3138845690</th>
+                <th class="centrado">jose123@gmail.com</th>
+                <th class="centrado">4.8</th>
+                <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">4</th>
+                <th class="centrado">Juan</th>
+                <th class="centrado">Tambor</th>
+                <th class="centrado">3145845690</th>
+                <th class="centrado">juan123@gmail.com</th>
+                <th class="centrado">2.6</th>
+                <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"><button class="btn btn-light btg-lg my-3"><img src="img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              </tbody>
+             </table>
+          </div>
+        </div>
+      </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script src="dahsboard.js"></script>
+  </body>
+</html>    

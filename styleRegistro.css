@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/login\ fondo.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.Registro-box{
+    width: 600px;
+    height: 700px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 100px 60px;
+}
+
+.Registro-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 50px);
+}
+
+.Registro-box h1{
+    margin: 0;
+    padding: -10 0 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.Registro-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.Registro-box input[type="radio"]{
+    padding: 4px 0px 4px 0px;
+}
+
+.Registro-box input[type="text"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+}
+.Registro-box input[type="email"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+}
+.Registro-box input[type="tel"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+}
+.Registro-box input[type="password"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.Registro-box input[type="submit"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: #fdb4bf;
+    outline: none;
+    height: 40px;
+    background: #fdb4bf;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.Registro-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.Registro-box b {
+    text-decoration: none;
+    font-size: 14px;
+    color: #595959;
+}
+
+.Registro-box a:hover {
+    color: #000;
+}
