@@ -5,7 +5,7 @@ body {
     opacity: 0.9;
     background-size: cover;
     font-family: PT serifa;
-    height: 110vh;
+    height: 100vh;
 }
 
 .crearunacuenta-box{
@@ -13,7 +13,7 @@ body {
     height: 860px;
     background: #fff;
     color: #000;
-    top: 55%;
+    top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -24,11 +24,11 @@ body {
 }
 
 .crearunacuenta-box .avatar {
-    width: 100px;
-    height: 100px;
+    width: 18%;
     position: absolute;
-    top: 10px;
-    left: calc(50% - 50px);
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -10%);
 }
 
 .crearunacuenta-box h1{
@@ -99,15 +99,21 @@ body {
 .crearunacuenta-box input[type="submit"] {
     width: 100%;
     margin-bottom: 20px;
-    border: #fdb4bf;
+    border: #b57ebc;
     outline: none;
     height: 40px;
-    background: #fdb4bf;
+    background: #b57ebc;
     color: #000;
     font-size: 18px;
     border-radius: 20px;
     font-family: PT serifa;
 }
+
+.crearunacuenta-box input[type="submit"]:hover{
+    background-color: #4d3653;
+    color: #fff;
+}
+
 .crearunacuenta-box label{
     padding: 0px 0px 4px 0px;
 }
@@ -150,3 +156,4 @@ body {
 .crearunacuenta-box a:hover {
     color: #000;
 }
+
