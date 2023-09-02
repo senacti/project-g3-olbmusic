@@ -1,6 +1,10 @@
 $(document).ready(function () {
     $('#table').DataTable({
         dom: "Bfrtilp",
+        lengthMenu: [4,8,12,16],
+        columnDefs: [
+            {orderable: false, target: [2,3,4,6,7]}
+        ],
         buttons: [
             {
                 extend: 'pdfHtml5',
@@ -8,10 +12,6 @@ $(document).ready(function () {
                 titleAttr: 'Exportar a PDF',
                 className: 'btn btn-danger',
             }
-        ],
-        lengthMenu: [4,8,12,16],
-        columnDefs: [
-            {orderable: false, target: [2,3,4,6,7]}
         ],
         language: {
             "processing": "Procesando...",
