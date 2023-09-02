@@ -7,7 +7,7 @@ body{
 }
 
 .navbar {
-    background-color: #b098c1;
+    background-color: #dedede;
     padding: 0 10px 0 10px;
     position: fixed;
     top: 0;
@@ -20,7 +20,7 @@ body{
 }
 
 .logo{
-    width: 145px;
+    width: 70px;
     text-transform: uppercase;
 }    
 
@@ -52,7 +52,7 @@ header.menu  {
 }
 
 .menu li a:hover {
-    color: #690F67;
+    color: #b57ebc;
 }
 
 .menu label {
@@ -71,11 +71,11 @@ header.menu  {
     color: #1D1D1B;
     padding-left: 250px;
     padding-bottom: 25px;
-    text-shadow: 3px 5px 5px #fdb4bf;
+    text-shadow: 3px 5px 5px ;
 }
 
-.avatar2{
-    width: 53%;
+.avatar{
+    width: 50%;
 }
 
 .container-404 {
@@ -90,23 +90,26 @@ header.menu  {
 
 h1{
     color: #000;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
     padding: 8px;
     line-height: 5px;
 }
 
 .container-404 a{
-    padding: 13px 30px;
+    padding: 12px 30px;
     border-radius: 10px;
     border: none;
-    font-size: 18px;
-    background: #fdb4bf;
+    font-size: 20px;
+    background: #b57ebc;
     text-decoration: none;
     color: #000;
 }
 
 .container-404 a:hover {
-    background-color: #e57d90;
+    background-color: #4d3653;
+    color: #fff;
 }
+
+
 
