@@ -1,182 +1,223 @@
-<!DOCTYPE html>
-<html class="html" lang="en">
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    height: 100vh;
+    font-family: PT serifa;
+    position: relative;
+    padding-bottom: 1350px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLB-MUSIC</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link class="logo img" rel="icon" href="img/Logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="script.js" defer></script>
-</head>
+.navbar {
+    background-color: #dedede;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
 
-<body>
-    <div data-content  id="Inicio" class="active">
-        <header>
-            <nav class="navbar">
-                <div class="Logo ">
-                        <a href="index.html">
-                            <img class="logo" src="img/Logo.png" alt="menu">
-                        </a>
-                </div>
-                <ul class="menu">
-                            <li><a href="Quienes-somos.html">Quienes somos</a></li>
-                            <li><a href="Nuestros-servicios.html">Nuestros servicios</a></li>
-                            <li><a href="Login.html">Login</a></li>
-                            <li><a href="Crearunacuenta.html">Crear una cuenta</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+.logo{
+    width: 65px;
+    text-transform: uppercase;
+    margin-left: 45%;
+}    
 
-        <section class="title container">
-            <div class="section-txt">
-                <h1>ORQUESTA LATIN BERRYS</h1>
-            </div>
-        </section>
+header.menu  {
+    position: fixed;
+    float: right;
+    list-style: none;
+}
 
-        <section class="container">
-            <div class="description">
-                <p>¡Bienvenidos a la orquesta élite de la música tropical! Disfruta de shows en vivo, conciertos
-                    virtuales, shows personalizados, y ¡más! Selecciona el formato musical que más se acomode a tus
-                    necesidades para que puedas disfrutar de toda la magia y el sabor latino que la Orquesta Latin
-                    Berrys tiene para ti!</p>
-            </div>
-        </section>
+.navbar .menu  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    float: left ;
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style: none;
+} 
 
+.menu li a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
 
-        <section>
-            <div class="section container">
-                <iframe class="section video" width="600" height="400"
-                    src="https://www.youtube.com/embed/61nHGhmcRgk"></iframe>
-                <div class="section-txt">
-                    <p>
-                        Interpretamos diferentes géneros musicales: Salsa, Merengue, Bachata, Cumbia, Boleros, entre
-                        otros estilos con el sello Latino, desde nuestra misión buscamos hacer de la música un espacio
-                        para disfrutar y compartir momentos inolvidables con allegados, familiares, en pareja o ¡con
-                        quien sea!, Nuestros servicios están para ti, en salas de conciertos, teatros o festivales, en
-                        los hogares, salones comunales, con coreografías bailables ¡y más!
-                    </p>
-                </div>
-            </div>
-        </section>
+.menu li a:hover {
+    color: #b57ebc;
+}
 
-        <section class="container">
-            <article class="post">
-                <h2>Estrella Baquero</h2>
-                <img src="img/img2.jpg" width="250" height="250" />
-                <p>Química y cantante lírica.Nacida en Bogotá, Colombia. Seha destacado como solista en varias
-                    agrupaciones
-                    y coros del país. Hoy en día interpreta como solista repertorio lírico, balada, jazz, tropical y
-                    pop.
-                    Así mismo, combina si pasión por la moda en una boutique: "Su Traje Elegante".</p>
-            </article><br>
-            <article class="post">
-                <h2>Carolina Lopez</h2>
-                <img src="img/img3.jpg" width="250" height="250" />
-                <p>Ortodoncista y ortopedista Maxilar, Especialista y Magister en Forense. Cantante lírica, nacida en
-                    Bogotá, Colombia. Desde su niñez trabajó en varios coros y proyectos musicales reconocidos del país.
-                    Ha
-                    participado en temporadas líricas y festivales como solista. En la actualidad, fusiona su profesión
-                    con
-                    la música y un emprendimiento propio de alimentos gourmet: "La Carolina".</p>
-            </article><br>
-            <article class="post">
-                <h2>Liliana Ospina</h2>
-                <img src="img/img4.jpg" width="250" height="250" />
-                <p>Gestora cultural y cantante lírica. Nacida en Bogotá, Colombia. Desde temprana edad formó parte de
-                    diversas agrupaciones musicales de la ciudad de Bogotá.
-                    Participa como corista en diversos montajes sinfónico-corales y tiene un emprendimiento en el que
-                    explora sus inclinaciones artísticas: "PegLove".</p>
-            </article><br>
-            <article class="post">
-                <h2>Adriana Ramirez</h2>
-                <img src="img/img5.jpg" width="250" height="250" />
-                <p>QCantante popular y lírica. Pedagoga musical nacida en Bogotá, Colombia. Ha trabajado en varios
-                    proyectos
-                    musicales a nivel nacional con diferentes agrupaciones. Actualmente, canta como solista en los
-                    principales escenarios y empresas del país, interpretando repertorio popular; tambíén ejerce su
-                    labor
-                    pedagógica musical, como Docente Escolar.</p>
-            </article>
-        </section>
+.menu label {
+    cursor: pointer;
+    display: flex;
+} 
 
-        <footer class="footer">
-            <div class="footer container">
-                <div class="link">
-                    <h3>Atencion al ususario</h3>
-                    <ul>
-                        <li><a href="conaju.333@gmail.com">Correo electronico</a></li>
-                        <li><a href="3192074873">Numero telefonico</a></li>
-                        <li>Horarios de atencion:<br>
-                            Lunes a viernes:<br>
-                            * 9 am - 7 pm</li>
-                    </ul>
+.title {
+    max-width: 1500px;
+    margin-top: -2% ;
+    display: flex;
+    justify-content: center;
+}
 
-                    <ul>
-                        <li><a
-                                href="https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D573188134121&e=AT2OPQsYhser-iOd_
-                                H5BI6rzwgohNRAgIC7xSxTu02zQl14jYtIcemnQrZyyKatrdZmv70vnTOoyJD1BlG5nrOyIgwBzFZ89ghrMJA">Whatsapp</a>
-                        </li>
-                        <li><a href="https://www.instagram.com/latinberrysingers/">Instagram</a></li>
-                    </ul>
-                </div>
-                <div class="footer-img">
-                    <img width="80px" src="img/Logo.png" class="menu-icono" alt="menu">
-                </div>
-            </div>
-        </footer>
-    </div>
+.section-txt h1 {
+    font-size: 70px;
+    color: #1D1D1B;
+    padding-top: 90px;
+    text-shadow: 3px 5px 5px #b57ebc;
+    align-items: center;
+}
 
-    <div data-content id="Quienes somos">
-        <section class="container">
-            <article class="post">
-                <h2>Estrella Baquero</h2>
-                <img src="img/img2.jpg" width="250" height="250" />
-                <p>Química y cantante lírica.Nacida en Bogotá, Colombia. Seha destacado como solista en varias
-                    agrupaciones
-                    y coros del país. Hoy en día interpreta como solista repertorio lírico, balada, jazz, tropical y
-                    pop.
-                    Así mismo, combina si pasión por la moda en una boutique: "Su Traje Elegante".</p>
-            </article><br>
-            <article class="post">
-                <h2>Carolina Lopez</h2>
-                <img src="img/img3.jpg" width="250" height="250" />
-                <p>Ortodoncista y ortopedista Maxilar, Especialista y Magister en Forense. Cantante lírica, nacida en
-                    Bogotá, Colombia. Desde su niñez trabajó en varios coros y proyectos musicales reconocidos del país.
-                    Ha
-                    participado en temporadas líricas y festivales como solista. En la actualidad, fusiona su profesión
-                    con
-                    la música y un emprendimiento propio de alimentos gourmet: "La Carolina".</p>
-            </article><br>
-            <article class="post">
-                <h2>Liliana Ospina</h2>
-                <img src="img/img4.jpg" width="250" height="250" />
-                <p>Gestora cultural y cantante lírica. Nacida en Bogotá, Colombia. Desde temprana edad formó parte de
-                    diversas agrupaciones musicales de la ciudad de Bogotá.
-                    Participa como corista en diversos montajes sinfónico-corales y tiene un emprendimiento en el que
-                    explora sus inclinaciones artísticas: "PegLove".</p>
-            </article><br>
-            <article class="post">
-                <h2>Adriana Ramirez</h2>
-                <img src="img/img5.jpg" width="250" height="250" />
-                <p>QCantante popular y lírica. Pedagoga musical nacida en Bogotá, Colombia. Ha trabajado en varios
-                    proyectos
-                    musicales a nivel nacional con diferentes agrupaciones. Actualmente, canta como solista en los
-                    principales escenarios y empresas del país, interpretando repertorio popular; tambíén ejerce su
-                    labor
-                    pedagógica musical, como Docente Escolar.</p>
-            </article>
-        </section>
+.description {
+    font-size: 25px;
+    margin-top: -3%;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 75px;
+}
 
-    </div>
+.section-container {
+    max-width: 1500px;
+    margin-top: -3%; 
+    margin-left: -5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    
+.section-video {
+    margin-left: 12%;
+    width: 800px;
+    height: 550px;
+    border: none;
+    box-shadow: 0 0 40px #4d3653;
+}
 
-</body>
+.description-video {
+    margin: 0 35px ;
+    border-radius: 20px;
+    background-color: #DFBCD7;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 480px;
+    font-size: 25px;
+    padding-left: 3%;
+    padding-right: 3%;
+}  
 
-</html>
+.avatar{
+    margin-top: 4%;
+    margin-left: 18%;
+    text-align: center;
+    width: 1000px;
+}
+.novedades h2 {
+    margin-top: -5%;
+    margin-left: 6%;
+    font-size: 40px;
+    color: #1D1D1B;
+    padding-top: 90px;
+    text-shadow: 3px 5px 5px #b57ebc;
+    align-items: center;
+}
+.novedades .avatarnovedad {
+    margin-left: 30%;
+    margin-top: -1%;
+    text-align: center;
+    width: 35%;
+}
+
+.pie-pagina {
+    background-color: #dedede;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.pie-pagina .grupo1 .box figure{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo1 .box h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box p{
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .redsocial .whatsapp{
+    background-image: url(img/iconos/whatsapp.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial .instagram{
+    background-image: url(img/iconos/instagram.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial .facebook{
+    background-image: url(img/iconos/facebook.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial .youtube{
+    background-image: url(img/iconos/youtube.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #000;
+    margin-right: 10px;
+    background-color: #b57ebc;
+    text-align: center;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover {
+    background-color: #72418c;
+}
+
+.pie-pagina .grupo1 .box .ubicacion {
+    margin-top: 10%;
+    margin-left: 10%;
+}
