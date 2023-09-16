@@ -5,7 +5,7 @@ body {
     opacity: 0.9;
     background-size: cover;
     font-family: PT serifa;
-    height: 100vh;
+    height: 120vh;
 }
 
 .crearunacuenta-box{
@@ -13,7 +13,7 @@ body {
     height: 860px;
     background: #fff;
     color: #000;
-    top: 50%;
+    top: 60%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -156,4 +156,3 @@ body {
 .crearunacuenta-box a:hover {
     color: #000;
 }
-
