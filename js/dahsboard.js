@@ -3,16 +3,10 @@ $(document).ready(function () {
         dom: "Bfrtilp",
         lengthMenu: [4,8,12,16],
         columnDefs: [
-            {orderable: false, target: [2,3,4,6,7]}
+            {orderable: false, target: [2,3,4]}
         ],
-        buttons: [
-            {
-                extend: 'pdfHtml5',
-                text: "<i class='fa-solid fa-file-pdf'></i>",
-                titleAttr: 'Exportar a PDF',
-                className: 'btn btn-danger',
-            }
-        ],
+
+
         language: {
             "processing": "Procesando...",
     "lengthMenu": "Mostrar _MENU_ registros",
@@ -259,3 +253,5 @@ $(document).ready(function () {
         }
     });
 });
+
+
