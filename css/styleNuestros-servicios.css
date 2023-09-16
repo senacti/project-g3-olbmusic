@@ -81,46 +81,61 @@ header.menu  {
     margin-top: -3%;
     padding-left: 70px;
     padding-right: 70px;
-    padding-bottom: 75px;
 }
 
-.login-box {
-    width: 420px;
-    height: 570px;
-    background: #fff;
-    margin-top: -4%;
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+section article {
+    margin-top: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 370px;
+    height: 530px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px #b57ebc;
+    justify-content: center;
+    align-items: center;
+}
+
+section .post {
     margin-left: 5%;
-    position: relative;
-    box-sizing: border-box;
-    padding: 20px 30px;
-    box-shadow: 0 0 15px #6f6f6f;
-    border-radius: 20px;
+    padding: 10px;
 }
 
-.login-box h1{
-    text-align: center;
-    font-weight: 900 ;
-    font-size: 30px;
-    text-shadow: 2px 2px 5px #b57ebc;
+section .post1 {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 10px;
 }
 
-.login-box p{
-    text-align: center;
-    font-size: 25px;
+section .post2 {
+    margin-right: 3%;
+    padding: 10px;
 }
 
-.login-box .avatar{
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    filter: drop-shadow(5px 5px 7px  #b57ebc);
+section h1{
+    font-size: 28px;
+    color: #1D1D1B;
+    padding-top: 2px;
+    align-items: center;
+
+}
+section p{
+    font-size: 20px;
+    color: #1D1D1B;
+    padding-top: 5px;
+    align-items: center;
 }
 
-.login-box input[type="submit"] {
-    margin-top: 75%;
-    margin-left: 30%;
+section input[type="submit"] {
+    margin-top: 8%;
     border: #b57ebc;
     outline: none;
     width: 140px;
@@ -133,115 +148,7 @@ header.menu  {
     font-weight: 500;
 }
 
-.login-box input[type="submit"]:hover{
-    background-color: #4d3653;
-    color: #fff;
-}
-
-.login-box2 {
-    width: 420px;
-    height: 570px;
-    background: #fff;
-    margin-top: -39%;
-    margin-left: 36%;
-    position: relative;
-    box-sizing: border-box;
-    padding: 20px 30px;
-    box-shadow: 0 0 15px #6f6f6f;
-    border-radius: 20px;
-}
-
-.login-box2 h1{
-    text-align: center;
-    font-weight: 900 ;
-    font-size: 30px;
-    text-shadow: 2px 2px 5px #b57ebc;
-}
-
-.login-box2 p{
-    text-align: center;
-    font-size: 25px;
-}
-
-.login-box2 .avatar{
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    filter: drop-shadow(5px 5px 7px  #b57ebc);
-}
-
-.login-box2 input[type="submit"] {
-    margin-top: 75%;
-    margin-left: 30%;
-    border: #b57ebc;
-    outline: none;
-    width: 140px;
-    height: 40px;
-    background: #b57ebc;
-    color: #000;
-    font-size: 22px;
-    font-family: PT serifa;
-    border-radius: 20px;
-    font-weight: 500;
-}
-
-.login-box2 input[type="submit"]:hover{
-    background-color: #4d3653;
-    color: #fff;
-}
-
-.login-box3 {
-    width: 420px;
-    height: 570px;
-    background: #fff;
-    margin-top: -39%;
-    margin-left: 67%;
-    position: relative;
-    box-sizing: border-box;
-    padding: 20px 30px;
-    box-shadow: 0 0 15px #6f6f6f;
-    border-radius: 20px;
-}
-
-.login-box3 h1{
-    text-align: center;
-    font-weight: 900 ;
-    font-size: 30px;
-    text-shadow: 2px 2px 5px #b57ebc;
-}
-
-.login-box3 p{
-    text-align: center;
-    font-size: 25px;
-}
-
-.login-box3 .avatar{
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    filter: drop-shadow(5px 5px 7px  #b57ebc);
-}    
-
-.login-box3 input[type="submit"] {
-    margin-top: 98%;
-    margin-left: 30%;
-    border: #b57ebc;
-    outline: none;
-    width: 140px;
-    height: 40px;
-    background: #b57ebc;
-    color: #000;
-    font-size: 22px;
-    font-family: PT serifa;
-    border-radius: 20px;
-    font-weight: 500;
-}
-
-.login-box3 input[type="submit"]:hover{
+section input[type="submit"]:hover{
     background-color: #4d3653;
     color: #fff;
 }
