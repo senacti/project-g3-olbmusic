@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    height: 100vh;
+    font-family: PT serifa;
+    position: relative;
+    padding-bottom: 700px;
+}
+.head{
+    position: fixed;
+}
+.navbar {
+    background-color: #dedede;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.logo{
+    width: 65px;
+    text-transform: uppercase;
+    margin-left: 45%;
+}    
+
+header.menu  {
+    position: fixed;
+    float: right;
+    list-style: none;
+
+}
+.navbar .menu  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    float: left ;
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style: none;
+} 
+
+.menu li a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.menu li a:hover {
+    color: #b57ebc;
+}
+
+.menu label {
+    cursor: pointer;
+    display: flex;
+} 
+
+.title {
+    max-width: 1500px;
+    margin-top: -2% ;
+    display: flex;
+    justify-content: center;
+}
+
+.section-txt h1 {
+    font-size: 70px;
+    color: #1D1D1B;
+    padding-top: 90px;
+    text-shadow: 3px 5px 5px #b57ebc;
+    align-items: center;
+}
+
+.description {
+    font-size: 25px;
+    margin-top: -3%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+section article {
+    margin-top: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 370px;
+    height: 700px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px #b57ebc;
+    justify-content: center;
+    align-items: center;
+}
+
+section .post {
+    margin-left: 5%;
+    padding: 10px;
+}
+
+section .post1 {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 10px;
+}
+
+section .post2 {
+    margin-right: 3%;
+    padding: 10px;
+}
+section .post3 {
+    margin-right: 5%;
+    padding: 10px;
+}
+section h2{
+    font-size: 28px;
+    color: #1D1D1B;
+    padding-top: 2px;
+    align-items: center;
+
+}
+section p{
+    font-size: 20px;
+    color: #1D1D1B;
+    padding-top: 5px;
+    align-items: center;
+}
+
+
+.pie-pagina {
+    background-color: #dedede;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.pie-pagina .grupo1 .box figure{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo1 .box h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box p{
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .redsocial .whatsapp{
+    background-image: url(img/iconos/whatsapp.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial .instagram{
+    background-image: url(img/iconos/instagram.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial .facebook{
+    background-image: url(img/iconos/facebook.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial .youtube{
+    background-image: url(img/iconos/youtube.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #000;
+    margin-right: 10px;
+    background-color: #b57ebc;
+    text-align: center;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover {
+    background-color: #72418c;
+}
+
+.pie-pagina .grupo1 .box .ubicacion {
+    margin-top: 10%;
+    margin-left: 10%;
+}
