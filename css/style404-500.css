@@ -20,8 +20,9 @@ body{
 }
 
 .logo{
-    width: 70px;
+    width: 65px;
     text-transform: uppercase;
+    margin-left: 45%;
 }    
 
 header.menu  {
@@ -60,7 +61,7 @@ header.menu  {
     display: flex;
 } 
 
-.section .container-404 {
+.section .container-404-500 {
     justify-content: center;
     align-items: center;
     margin: 20px;
@@ -75,10 +76,10 @@ header.menu  {
 }
 
 .avatar{
-    width: 50%;
+    width: 55%;
 }
 
-.container-404 {
+.container-404-500 {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -96,7 +97,7 @@ h1{
     line-height: 5px;
 }
 
-.container-404 a{
+.container-404-500 a{
     padding: 12px 30px;
     border-radius: 10px;
     border: none;
@@ -106,10 +107,7 @@ h1{
     color: #000;
 }
 
-.container-404 a:hover {
+.container-404-500 a:hover {
     background-color: #4d3653;
     color: #fff;
 }
-
-
-
