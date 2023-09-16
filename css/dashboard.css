@@ -1,45 +1,72 @@
 * {
     color:black;
-  }
-  .navbar {
-    background-color: #c6c6c6;
-  }
-  .table {
-    border: 1px solid rgba(39,41,43,0.1); }
-  .table.img {
-    border: #e57d90;
-  }
-  a {
-    color: black;
-  }
-  .btn.btlist-group-item {
-    background-color: rgba(253,180,191,0.66);
-     
-    
-    font-size: 19px; 
-    font-weight: 500; 
-    margin:1px; 
-    color:black; 
 }
-
+.navbar {
+  background-color: #c6c6c6;
+}
+.table {
+  border: 1px solid rgba(39,41,43,0.1); 
+  justify-content: center; }
+.table.img {
+  border: rgb(142, 59, 190);
+}
+a {
+  color: black;
+}
+.btn.btlist-group-item {
+  background-color: rgb(192, 145, 204);
+  font-size: 19px; 
+  font-weight: 500; 
+  margin:1px; 
+  color:black; 
+  padding-left: 0;
+  padding-right: 0;
+}
 .btn.btlist-group-item > a {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; } 
+.btn {
+  background-color: rgb(124, 72, 154); 
+  color: black;
+  border: rgb(196, 134, 233); }
+.btn:hover {
+  background-color: rgb(138, 90, 167); }
+.btn:hover>a {
+  color: white; }
+.btn1 {
+  background-color: rgba(255, 159, 64, 0.2);
+  color: black;
+  border: rgb(255, 160, 64); }
+.btn1:hover {
+  background-color: rgba(255, 160, 64, 0.486);}
+.btn2 {
+  background-color: rgba(75, 192, 149, 0.2);
+  color: black;
+  border: rgb(75, 192, 149); }
+.btn2:hover {
+  background-color: rgba(75, 192, 149, 0.614);}
+.btn3 {
+  background-color: rgba(54, 162, 235, 0.2);
+  color: black;
+  border: rgb(54, 163, 235); }
+.btn3:hover {
+  background-color: rgba(54, 163, 235, 0.595);}
+.centrado {
+  text-align: center;
+  vertical-align: middle; }
+.cuadro {
+  color:#5e5e5e;
+}
+.color-rosado1 {
+  background-color: rgba(255, 159, 64, 0.2);
+}
+.color-rosado2 {
+  background-color:  rgba(75, 192, 192, 0.2);
+}
+.color-rosado3 {
+  background-color: rgba(54, 162, 235, 0.2);
 }
 
-  .btn.btlist-group-item:hover {
-    background-color: #e57d90;
-    color: white; }
-  .btn {
-    background-color: rgba(253,180,191,0.66); 
-    color: black;
-    border: #e57d90; }
-  .btn:hover {
-    background-color: #e57d90;
-    color: white; }
-  .centrado {
-    text-align: center;
-    vertical-align: middle; }
