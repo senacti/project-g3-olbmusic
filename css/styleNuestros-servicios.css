@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url(/img/Fondo6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Domine;
+}
+
+.navbar {
+    background-color: #dedede;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.logo{
+    width: 65px;
+    text-transform: uppercase;
+    margin-left: 90%;
+}    
+
+header.menu  {
+    position: fixed;
+    float: right;
+    list-style: none;
+}
+
+.navbar .menu  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    float: left ;
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style: none;
+} 
+
+.menu li a {
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li a:hover {
+    color: #b57ebc;
+}
+
+.menu label {
+    cursor: pointer;
+    display: flex;
+} 
+
+.title {
+    max-width: 1500px;
+    margin-top: -2% ;
+    display: flex;
+    justify-content: center;
+}
+
+.section-txt h1 {
+    font-size: 70px;
+    color: #fff;
+    padding-top: 100px;
+    text-shadow: 5px 5px 7px #b57ebc;
+    align-items: center;
+}
+
+.description {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -3%;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+section article {
+    margin-bottom: 5%;
+    background-image: url(/img/Fondo\ morado.jpg);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 350px;
+    font-size: 25px;
+}
+
+section .post {
+    margin-left: 4%;
+    padding: 10px 20px 25px ;
+    
+}
+
+section .post1 {
+    margin-left: 4%;
+    padding: 10px 20px 25px ;
+}
+
+section .post2 {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 10px 20px 25px ;
+}
+
+section input[type="submit"] {
+    margin-top: 8%;
+    border: #b57ebc;
+    outline: none;
+    width: 140px;
+    height: 40px;
+    background: #b57ebc;
+    color: #000;
+    font-size: 22px;
+    font-family: Domine;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+section input[type="submit"]:hover{
+    background-color: #4d3653;
+    color: #fff;
+}
+
+.pie-pagina {
+    background-color: #dedede;
+    position: absolute;
+    width: 100%;
+    background-position: bottom;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.pie-pagina .grupo1 .box figure{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo1 .box h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.pie-pagina .grupo1 .box p{
+    color: #000;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.pie-pagina .grupo1 .redsocial .whatsapp{
+    background-image: url(/img/iconos/whatsapp.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+    margin-left: 20px;
+}
+
+.pie-pagina .grupo1 .redsocial .instagram{
+    background-image: url(/img/iconos/instagram.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+    
+}
+
+.pie-pagina .grupo1 .redsocial .facebook{
+    background-image: url(/img/iconos/facebook.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial .youtube{
+    background-image: url(/img/iconos/youtube.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.pie-pagina .grupo1 .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #000;
+    margin-right: 10px;
+    background-color: #b57ebc;
+    text-align: center;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover {
+    background-color: #72418c;
+}
+
+.pie-pagina .grupo1 .box .ubicacion {
+    margin-top: 10%;
+    margin-left: 10%;
+}
