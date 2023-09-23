@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Lista de administradores| OLB-MUSIC</title>
+    <link class="logo img" rel="icon" href="/img/Logo.png">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/css/dashboard.css">
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/Logo.png" alt="Bootstrap" width="70" height="70">
+            ORQUESTA LATIN BERRYS
+            </a>
+            <a><img class="mx-auto" src="/img/iconos/buscador.png"width="40px"> <label><input  type="search" class="form-control form-control-sm" placeholder aria- controls="table">
+            </label></a>
+            <a><img src="/img/iconos/person.svg"width="40px"></a>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+            <ul class="list-group list-group-flush my-5 py-3">
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dahsboard_listaDeEmpleados.html" class="d-flex w-100 h-100">
+                  Listado de empleados
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_listaDeAdministradores.html" class="d-flex w-100 h-100">
+                  Lista de administradores
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_listaDePresentaciones.html" class="d-flex w-100 h-100">
+                  Lista de presentaciones
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_puntuacion.html" class="d-flex w-100 h-100">
+                  Puntuacion de empleados
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex flex-column mx-2">
+            <table id="table" class="table-striped table-hover w-100 mx-auto">
+              <h2 class="my-4"><img src="/img/iconos/administrador.png" width="35px"> Listado administradores</h2>
+              <hr>
+              <button class="btn1 btn-light btg-lg my-3 col-md-3"><img src="/img/iconos/add-circle-outline.svg" width="25px" height="25px"> Añadir administrador</button>
+              <thead>
+               <tr>
+                <th class="centrado py-4">N°</th>
+                <th class="centrado ">Nombre del adiministrador</th>
+                <th class="centrado">Rol</th>
+                <th class="centrado">Numero</th>
+                <th class="centrado">Correo</th>
+                <th class="centrado"> </th>
+                <th class="centrado"> </th>
+               </tr>
+              </thead>
+              
+              <tbody>
+               <tr>
+                 <th class="centrado py-3">1</th>
+                 <th class="centrado">Julian Gutierrez</th>
+                 <th class="centrado">Jefe de empleados</th>
+                 <th class="centrado">3218569825</th>
+                 <th class="centrado">Juli123@gmail.com</th>
+                 <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+               </tr>
+               <tr>
+                 <th class="centrado py-3">2</th>
+                 <th class="centrado">Matha Patiño</th>
+                 <th class="centrado">Jefe en Staff</th>
+                 <th class="centrado">3145698235</th>
+                 <th class="centrado">martha123@gmail.com</th>
+                 <th class="centrado"><button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"><button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+               </tr>
+               <tr>
+                 <th class="centrado py-3">3</th>
+                 <th class="centrado">Andres Chaparro</th>
+                 <th class="centrado">Jefe en ensayos</th>
+                 <th class="centrado">3156398654</th>
+                 <th class="centrado">andres123@gmail.com</th>
+                 <th class="centrado"><button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"><button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+               </tr>
+               <tr>
+                <th class="centrado py-3">4</th>
+                <th class="centrado">Laura Perez</th>
+                <th class="centrado">Jefe de  marketing</th>
+                <th class="centrado">3121568911</th>
+                <th class="centrado">lau123@gmail.com</th>
+                <th class="centrado"><button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"><button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+                </tr>
+                <tr>
+                  <th class="centrado py-3">5</th>
+                  <th class="centrado">Valentina Suarez</th>
+                  <th class="centrado">Jefe en tecnologia</th>
+                  <th class="centrado">3220350622</th>
+                  <th class="centrado">valen123@gmail.com</th>
+                  <th class="centrado"><button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                  <th class="centrado"><button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+                </tr>
+              </tbody>
+             </table>
+          </div>
+        </div>
+      </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script src="/js/dahsboard.js"></script>
+  </body>
+</html>    
