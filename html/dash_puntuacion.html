@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Puntuación empleados| OLB-MUSIC</title>
+    <link class="logo img" rel="icon" href="/img/Logo.png">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+             <img src="/img/Logo.png" alt="Bootstrap" width="70" height="70">
+            ORQUESTA LATIN BERRYS
+          </a>
+          <a><img class="justify-content: unset" src="/img/iconos/buscador.png"width="40px"> 
+            <label><input  type="search" class="form-control form-control-sm" placeholder aria- controls="table">
+          </label>
+          <img class="mx-3" src="/img/iconos/person.svg" width="40px"></a>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+            <ul class="list-group list-group-flush my-5 py-3">
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dahsboard_listaDeEmpleados.html" class="d-flex w-100 h-100">
+                  <img src="/img/iconos/Empleado.png" width="35px">
+                  Listado de empleados
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_listaDeAdministradores.html" class="d-flex w-100 h-100">
+                  <img src="/img/iconos/administrador.png" width="35px">
+                  Lista de administradores
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_listaDePresentaciones.html" class="d-flex w-100 h-100">
+                  <img src="/img/iconos/presentacion.png" width="40px">
+                  Lista de presentaciones
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_puntuacion.html" class="d-flex w-100 h-100">
+                  <img src="/img/iconos/Puntuacion.png" width="40px">
+                  Puntuación de empleados
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+            <h2 class="my-4"><img src="/img/iconos/Puntuacion.png" width="40px"> Puntuación empleados</h2>
+              <hr>
+            <div class="container px-4 py-5 my-3 text-center">
+                <div class="row gx-5">
+                  <div class="col">
+                   <div class="p-3 border py-4 my-4 color-rosado1" >Staff<img class="mx-3" src="/img/iconos/organizar.png"width="40px">
+                        <div class="cuadro">Personas integradas:5</div>
+                   </div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border py-4 my-4 color-rosado2">Músicos<img class="mx-3" src="/img/iconos/instrumento-musical.png"width="40px">
+                        <div class="cuadro">Personas integradas:50</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border py-4 my-4 color-rosado3">Dj<img class="mx-3" src="/img/iconos/dj.png"width="40px">
+                        <div class="cuadro">Personas integradas:15</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <canvas id="grafica" width="250" height="80"></canvas>
+          </div>
+        </div>
+      </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script src="/js/dahsboard.js"></script>
+  </body>
+
+  <script>
+    var ctx=document.getElementById("grafica").getContext("2d");
+    var myChart = new Chart(ctx,{
+        type:"bar",
+        data:{
+            labels:["Enero","Febrero","Marzo","Abril"],
+            datasets:[
+                {
+                    label:"Grafica de puntuacion",
+                    data:[22,39,15,30],
+                    borderWidth:5,
+                    backgroundColor: [
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                    'rgb(153, 102, 255)',
+                    'rgb(153, 102, 255)',
+                    'rgb(153, 102, 255)',
+                    'rgb(153, 102, 255)'
+                    ],
+                    borderWidth: 1
+                }
+            ]
+        }
+    });
+
+  </script>
+</html>   

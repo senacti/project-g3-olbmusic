@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Lista de presentaciones| OLB-MUSIC</title>
+    <link class="logo img" rel="icon" href="/img/Logo.png">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/css/dashboard.css">
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+           <img src="/img/Logo.png" alt="Bootstrap" width="70" height="70">
+          ORQUESTA LATIN BERRYS
+        </a>
+        <a><img class="justify-content: unset" src="/img/iconos/buscador.png"width="40px"> 
+          <label><input  type="search" class="form-control form-control-sm" placeholder aria- controls="table">
+        </label>
+        <img class="mx-3" src="/img/iconos/person.svg" width="40px"></a>
+        </div>
+      </div>
+    </nav>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+            <ul class="list-group list-group-flush my-5 py-3">
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dahsboard_listaDeEmpleados.html" class="d-flex w-100 h-100">
+                  <img src="/img/iconos/Empleado.png" width="35px">
+                  Listado de empleados
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_listaDeAdministradores.html" class="d-flex w-100 h-100">
+                  <img src="/img/iconos/administrador.png" width="35px">
+                  Lista de administradores
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_listaDePresentaciones.html" class="d-flex w-100 h-100">
+                  <img src="/img/iconos/presentacion.png" width="40px">
+                  Lista de presentaciones
+                </a>
+              </li>
+              <li class="btn btlist-group-item py-4">
+                <a href="/html/dash_puntuacion.html" class="d-flex w-100 h-100">
+                  <img src="/img/iconos/Puntuacion.png" width="40px">
+                  Puntuación de empleados
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex flex-column mx-2">
+            <table id="table" class="table-striped table-hover w-100 mx-auto">
+              <h2 class="my-4"><img src="/img/iconos/presentacion.png" width="40px"> Listado presentaciones</h2>
+              <hr>
+              <button class="btn1 btn-light btg-lg my-3 col-md-3"><img src="/img/iconos/add-circle-outline.svg" width="25px"> Añadir presentacion</button>
+              <thead>
+               <tr>
+                 <th class="centrado py-4">N°</th>
+                 <th class="centrado ">Fecha de presentación</th>
+                 <th class="centrado">Formato de presentación</th>
+                 <th class="centrado">Cliente</th>
+                 <th class="centrado">Correo</th>
+                 <th class="centrado">Puntuación</th>
+                 <th class="centrado"> </th>
+                 <th class="centrado"> </th>
+               </tr>
+              </thead>
+         
+              <tbody>
+               <tr>
+                 <th class="centrado py-3">1</th>
+                 <th class="centrado">15-02-2023</th>
+                 <th class="centrado">Formato grande</th>
+                 <th class="centrado">Juan Perez</th>
+                 <th class="centrado">perez123@gmail.com</th>
+                 <th class="centrado">3.8</th>
+                 <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                 <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+                </tr>
+               <tr>
+                <th class="centrado py-3">2</th>
+                <th class="centrado">22-02-2023</th>
+                <th class="centrado">Formato mediano</th>
+                <th class="centrado">Sara Mendoza</th>
+                <th class="centrado">sara123@gmail.com</th>
+                <th class="centrado">4.3</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">3</th>
+                <th class="centrado">31-03-2023</th>
+                <th class="centrado">Formato pequeño</th>
+                <th class="centrado">Santiago Castro</th>
+                <th class="centrado">sani123@gmail.com</th>
+                <th class="centrado">2.4</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">4</th>
+                <th class="centrado">06-04-2023</th>
+                <th class="centrado">Formato mediano</th>
+                <th class="centrado">Tatiana Gonzales</th>
+                <th class="centrado">tata123@gmail.com</th>
+                <th class="centrado">5.0</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">5</th>
+                <th class="centrado">23-05-2023</th>
+                <th class="centrado">Formato grande</th>
+                <th class="centrado">Nicole Serrano</th>
+                <th class="centrado">Nicole123@gmail.com</th>
+                <th class="centrado">2.2</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">6</th>
+                <th class="centrado">14-06-2023</th>
+                <th class="centrado">Formato pequeño</th>
+                <th class="centrado">Alejandra Rodriguez</th>
+                <th class="centrado">aleja123@gmail.com</th>
+                <th class="centrado">4.7</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">7</th>
+                <th class="centrado">30-07-2023</th>
+                <th class="centrado">Formato mediano</th>
+                <th class="centrado">Diana Caceres</th>
+                <th class="centrado">diana123@gmail.com</th>
+                <th class="centrado">4.0</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">8</th>
+                <th class="centrado">02-07-2023</th>
+                <th class="centrado">Formato mediano</th>
+                <th class="centrado">Ximena Parra</th>
+                <th class="centrado">parra123@gmail.com</th>
+                <th class="centrado">4.0</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">9</th>
+                <th class="centrado">14-09-2023</th>
+                <th class="centrado">Formato grande</th>
+                <th class="centrado">Johan Saenz</th>
+                <th class="centrado">johan123@gmail.com</th>
+                <th class="centrado">4.2</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              <tr>
+                <th class="centrado py-3">10</th>
+                <th class="centrado">14-09-2023</th>
+                <th class="centrado">Formato pequeño</th>
+                <th class="centrado">Pedro Quintero</th>
+                <th class="centrado">pedro123@gmail.com</th>
+                <th class="centrado">3.5</th>
+                <th class="centrado"> <button class="btn2 btn-light btg-lg my-3"><img src="/img/iconos/create-outline.svg" width="20px"></button></th>
+                <th class="centrado"> <button class="btn3 btn-light btg-lg my-3"><img src="/img/iconos/trash-outline.svg" width="20px"></button></th>
+              </tr>
+              </tbody>
+             </table>
+          </div>
+        </div>
+      </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script src="/js/dahsboard.js"></script>
+  </body>
+</html>  
