@@ -145,11 +145,6 @@ main {
     cursor: pointer;
 }
 
-.formulario__btn:hover {
-    background-color: #4d3653;
-    color: #fff;
-}
-
 .formulario__mensaje-exito {
     font-size: 20px;
     color: #119200;
@@ -178,24 +173,6 @@ main {
     
 }
 
-
-/* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
-    .formulario {
-        grid-template-columns: 1fr;
-    }
-
-    .formulario__grupo-terminos, 
-    .formulario__mensaje,
-    .formulario__grupo-btn-enviar {
-        grid-column: 1;
-    }
-
-    .formulario__btn {
-        width: 100%;
-    }
-}
-
 .login-box a {
     vertical-align: bottom;
     text-decoration: none;
@@ -207,3 +184,4 @@ main {
 .login-box a:hover {
     color: #000;
 }
+
